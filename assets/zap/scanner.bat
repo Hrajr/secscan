@@ -1,0 +1,1 @@
+start zap.bat -quickurl http://localhost:5000 -quickout "C:\SpiderGit\GitRepository\Hrajr\SecScan\assets\scans\report4082021111959.xml" -quickprogress -cmd

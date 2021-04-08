@@ -1,0 +1,16 @@
+- type: spider                       
+    parameters:
+      context: my-app                        
+      url: https://sonerkapperszaak.nl                   
+
+ - type: activeScan
+    parameters:
+      context: my-app
+
+- type: openapi 
+    parameters:
+      apifile: api-definition.yaml
+     
+- type: report                       # Report generation
+    parameters:
+      template: traditional-html
