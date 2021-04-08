@@ -1,0 +1,45 @@
+env:
+  contexts:
+    - name: bodgeit
+      url: http://localhost:5000/
+      authentication:
+  parameters:
+    failOnError: true
+    failOnWarning: false
+    progressToStdout: true
+
+  jobs:
+    - type: addOns
+      parameters:
+        updateAddOns: false
+      install:
+      uninstall:
+
+    - type: passiveScan-config
+      paramteres:
+        maxAlertsPerRule: 10
+      rules:
+        - id: 2
+          desc: Private IP Disclosure
+          threshold: high
+
+    - type: spider
+      parameters:
+        warnIfFoundUrlsLessThan: 50
+        failIfFoundUrlsLessThan: 20
+        maxDuration: 0
+        maxDepth: 5
+        parseComments: true
+
+    - type: passiveScan-wait
+      parameters:
+        maxDuration: 1
+
+    - type: report
+      parameters:
+        reportDir: 
+        reportFile: baseline.html
+        template: traditional-html
+        reportTitle: 'ZAP Example baseline report'
+        reportDescription: 'Generated for ZAPCon 2021'
+        displayReport: true

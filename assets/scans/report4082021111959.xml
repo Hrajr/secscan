@@ -1,0 +1,247 @@
+<?xml version="1.0"?><OWASPZAPReport version="2.10.0" generated="do, 8 apr 2021 11:21:04">
+<site name="http://localhost:5000" host="localhost" port="5000" ssl="false"><alerts><alertitem>
+  <pluginid>10027</pluginid>
+  <alertRef>10027</alertRef>
+  <alert>Information Disclosure - Suspicious Comments</alert>
+  <name>Information Disclosure - Suspicious Comments</name>
+  <riskcode>0</riskcode>
+  <confidence>1</confidence>
+  <riskdesc>Informational (Low)</riskdesc>
+  <desc>&lt;p&gt;The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/highlight.js/9.15.10/highlight.min.js</uri>
+  <method>GET</method>
+  <evidence>TODO</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/jquery/3.4.1/jquery.min.js</uri>
+  <method>GET</method>
+  <evidence>username</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/plugins/summernote-cleaner.js</uri>
+  <method>GET</method>
+  <evidence>from</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/leaflet/1.6.0/leaflet.js</uri>
+  <method>GET</method>
+  <evidence>SELECT</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js</uri>
+  <method>GET</method>
+  <evidence>from</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/summernote/0.8.12/summernote-bs4.min.js</uri>
+  <method>GET</method>
+  <evidence>Select</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>bug</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>later</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>select</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>FROM</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>user</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>where</evidence>
+  </instance>
+  </instances>
+  <count>12</count>
+  <solution>&lt;p&gt;Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;The following pattern was used: \bTODO\b and was detected in the element starting with: &quot;!function(e){var t=&quot;object&quot;==typeof window&amp;&amp;window||&quot;object&quot;==typeof self&amp;&amp;self;&quot;undefined&quot;==typeof exports||exports.nodeType?t&amp;&quot;, see evidence field for the suspicious comment/snippet.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;&lt;/p&gt;</reference>
+  <cweid>200</cweid>
+  <wascid>13</wascid>
+  <sourceid>3</sourceid>
+</alertitem>
+<alertitem>
+  <pluginid>10096</pluginid>
+  <alertRef>10096</alertRef>
+  <alert>Timestamp Disclosure - Unix</alert>
+  <name>Timestamp Disclosure - Unix</name>
+  <riskcode>0</riskcode>
+  <confidence>1</confidence>
+  <riskdesc>Informational (Low)</riskdesc>
+  <desc>&lt;p&gt;A timestamp was disclosed by the application/web server - Unix&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>11929099</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>19526430</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/monaco-editor/0.21.2/min/vs/editor/editor.main.css</uri>
+  <method>GET</method>
+  <evidence>272019649</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>816519475</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>20101020</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/summernote/0.8.12/summernote-bs4.css</uri>
+  <method>GET</method>
+  <evidence>42857143</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/dropzone/5.5.1/dropzone.js</uri>
+  <method>GET</method>
+  <evidence>198794158</evidence>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/leaflet/1.6.0/leaflet.css</uri>
+  <method>GET</method>
+  <evidence>70710678</evidence>
+  </instance>
+  </instances>
+  <count>8</count>
+  <solution>&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;11929099, which evaluates to: 1970-05-19 02:38:19&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;</reference>
+  <cweid>200</cweid>
+  <wascid>13</wascid>
+  <sourceid>3</sourceid>
+</alertitem>
+<alertitem>
+  <pluginid>10021</pluginid>
+  <alertRef>10021</alertRef>
+  <alert>X-Content-Type-Options Header Missing</alert>
+  <name>X-Content-Type-Options Header Missing</name>
+  <riskcode>1</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Low (Medium)</riskdesc>
+  <desc>&lt;p&gt;The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &apos;nosniff&apos;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/font-awesome/5.14.0/css/all.min.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/leaflet/1.6.0/leaflet.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/1.0.26/css/__spiderApp.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/monaco-editor/0.21.2/min/vs/editor/editor.main.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/remix-icon/2.0.0/fonts/remixicon.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/highlight.js/9.15.10/styles/default.min.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/summernote/0.8.12/summernote-bs4.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderApp.StaticResources/libs/flag-icon-css/3.4.3/css/flag-icon.min.css</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/_content/SpiderWeb.StaticResources/images/spiderweb.png</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000/?lang=nl</uri>
+  <method>GET</method>
+  <param>X-Content-Type-Options</param>
+  </instance>
+  </instances>
+  <count>12</count>
+  <solution>&lt;p&gt;Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &apos;nosniff&apos; for all web pages.&lt;/p&gt;&lt;p&gt;If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.&lt;/p&gt;</solution>
+  <otherinfo>&lt;p&gt;This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.&lt;/p&gt;&lt;p&gt;At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.&lt;/p&gt;</otherinfo>
+  <reference>&lt;p&gt;http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+  <sourceid>3</sourceid>
+</alertitem>
+<alertitem>
+  <pluginid>10020</pluginid>
+  <alertRef>10020</alertRef>
+  <alert>X-Frame-Options Header Not Set</alert>
+  <name>X-Frame-Options Header Not Set</name>
+  <riskcode>2</riskcode>
+  <confidence>2</confidence>
+  <riskdesc>Medium (Medium)</riskdesc>
+  <desc>&lt;p&gt;X-Frame-Options header is not included in the HTTP response to protect against &apos;ClickJacking&apos; attacks.&lt;/p&gt;</desc>
+  <instances>
+  <instance>
+  <uri>http://localhost:5000/?lang=nl</uri>
+  <method>GET</method>
+  <param>X-Frame-Options</param>
+  </instance>
+  <instance>
+  <uri>http://localhost:5000</uri>
+  <method>GET</method>
+  <param>X-Frame-Options</param>
+  </instance>
+  </instances>
+  <count>2</count>
+  <solution>&lt;p&gt;Most modern Web browsers support the X-Frame-Options HTTP header. Ensure it&apos;s set on all web pages returned by your site (if you expect the page to be framed only by pages on your server (e.g. it&apos;s part of a FRAMESET) then you&apos;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&apos;s &quot;frame-ancestors&quot; directive. &lt;/p&gt;</solution>
+  <reference>&lt;p&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options&lt;/p&gt;</reference>
+  <cweid>16</cweid>
+  <wascid>15</wascid>
+  <sourceid>3</sourceid>
+</alertitem>
+</alerts></site></OWASPZAPReport>

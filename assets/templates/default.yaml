@@ -1,0 +1,68 @@
+env:
+  contexts :
+    - name: context 1
+      url:
+      includePaths:
+      excludePaths:
+      authentication:
+  parameters:
+    failOnError: true
+    failOnWarning: false
+    progressToStdout: true
+
+jobs:
+  - type: addOns
+    parameters:
+      updateAddOns: true
+    install:
+    uninstall:
+  - type: passiveScan-config
+    parameters:
+      maxAlertsPerRule: 10
+      scanOnlyInScope: true
+      maxBodySizeInBytesToScan:
+  - type: spider
+    parameters:
+      context:
+      url:
+      failIfFoundUrlsLessThan:
+      warnIfFoundUrlsLessThan:
+      maxDuration:
+      maxDepth:
+      maxChildren:
+      acceptCookies:
+      handleODataParametersVisited:
+      parseComments:
+      parseGit:
+      parseRobotsTxt:
+      parseSitemapXml:
+      parseSVNEntries:
+      pastForm:
+      processForm:
+      requestWaitTime:
+      sendRefererHeader:
+      threadCount:
+      userAgent:
+  - type: passiveScan-wait
+    parameters:
+      maxDuration: 5
+  - type: activeScan
+    parameters:
+      context:
+      url:
+      maxDuration:
+      maxRuleDurationInMins:
+      maxScanDurationInMins:
+      addQueryParam:
+      defaultPolicy:
+      delayInMs:
+      handleAntiCSRFTokens:
+      injectPluginIdInHeader:
+      scanHeadersAllRequests:
+      threadPerHost:
+  - type: report
+    parameters:
+      template:
+      reportDir:
+      reportFile:
+      displayReport:
